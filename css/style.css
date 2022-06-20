@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px dashed black;
+}
+
+.section {
+    height: 400px;
+    padding: 20px;
+    background-color: blue;
+}
+
+.first-section {
+    background-color: pink;
+    height: 300px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px dashed black;   
+}
