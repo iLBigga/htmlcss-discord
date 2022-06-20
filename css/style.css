@@ -1,9 +1,12 @@
+/* Regole debug */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
 }
 
+
+/* Regole header e container */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -20,33 +23,38 @@
     background-color: yellow;
     justify-content: space-between;
     padding: 10px;
-    border: 2px dashed black;
 }
 
+
+/* Regole Main */
 .section {
-    padding: 20px;
+    padding: 40px;
+}
+
+.download-section {
+    background-color: pink;
+    max-width: 800px;
+    margin: 0 auto;  
+}
+
+.download-bkg {
+    background-color: rgb(55, 113, 201);
 }
 
 .bkg {
     background-color: lightgrey;
 }
 
-.first-section {
-    background-color: pink;
-    height: 300px;
-    max-width: 800px;
-    border: 2px dashed black; 
-    margin: 0 auto;  
+.board {
+    height: 800px;
+    background-color: rgb(6, 214, 6);
 }
 
+/* Regole Flex */
 .flex {
     display: flex;
-    border: 2px dashed black;
 }
 
-.row, .row-reverse {
-    height: 400px;
-}
 
 .row-reverse {
     flex-direction: row-reverse;
@@ -55,49 +63,39 @@
 .flex-item-sx{
     background-color: aquamarine;
     flex-basis: 60%;
-    border: 2px dashed black;
 }
 
 .flex-item-dx {
     background-color: violet;
     flex-basis: 40%;
-    border: 2px dashed black;
 }
 
-.board {
-    height: 800px;
-    background-color: green;
-    border: 2px dashed black;
-}
 
+/* Regole Footer */
 footer {
     background-color: rgb(66, 66, 66);
 }
 
-.footer-info {
-    height: 450px;
-}
 
 .footer-item {
     background-color: aqua;
-    border: 2px dashed black;
     flex-grow: 1;
 }
 
-.footer-item-big {
+.footer-item-large {
     flex-grow: 2;
     background-color: bisque;
-    border: 2px dashed black;
 }
 
 .footer-section {
-    border-top: 2px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
 }
 
 .footer-nav {
     background-color: aqua;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
 }
 
 .footer-button {
@@ -105,3 +103,20 @@ footer {
     padding: 5px;
 }
 
+/* Regole Debug */
+
+* {
+    border: 2px dashed black;
+}
+
+.footer-info {
+    height: 450px;
+}
+
+.row, .row-reverse {
+    height: 400px;
+}
+
+.download-section {
+    height: 300px;
+}
