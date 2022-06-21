@@ -21,8 +21,8 @@ footer h4, footer h2 {
     color: #3d61e2;
 }
 
-h1 {
-    font-size: 40px;
+h1:first-of-type{
+    font-size: 50px;
     font-weight: bolder;
  }
 
@@ -30,26 +30,47 @@ h1 {
     font-size: 20px;
  }
 
- a {
+a {
     text-decoration: none;
-    color: white;
+    cursor: pointer;
+    color: white;  
  }
+
+
+ /* Regole Container */
+
+
+ .container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 
 /* button style */
 
 .button-style {
+    background-color: white;
     border: 0;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     font-size: 18px;
+}
+
+.login-button, .mac-button {
+    color: black;
 }
 
 .main-button {
     justify-content: space-evenly;
 }
 
-.mac-button::before{
+.mac-button::before, .mac-button-blue::before{
     content: '\2193';
+}
+
+.mac-button-blue {
+    background-color: #3d61e2;
+    color: white;
 }
 
 
@@ -58,12 +79,12 @@ h1 {
     color: white;
 }
 
-.magic-button {
+.star-button {
     margin: 0 auto;
 }
 
-.magic-button h2{
-    background-image: url(/img/stars.svg);
+.star-button h2{
+    background-image: url(../img/stars.svg);
     background-size: contain;
     width: 500px;
     height: 40px;
@@ -71,12 +92,8 @@ h1 {
 }
 
 
-/* Regole header e container */
+/* Regole header*/
 
-.container {
-    max-width: 1300px;
-    margin: 0 auto;
-}
 
 .main-header {
     padding: 10px;
@@ -126,8 +143,11 @@ h1 {
     margin-bottom: 20px;
 }
 
-
-
+.wave {
+    position: relative;
+    background-image: url(../img/wave.svg);
+    height: 100%;
+}
 
 
 /* Flex */
@@ -180,8 +200,19 @@ footer {
     flex-basis: calc(100% / 3);
 }
 
+.ita-flag {
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.footer-item-large span:nth-child(1)::after{
+    content: ' \25bc';
+}
+
 .footer-section {
-    padding-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 
@@ -190,21 +221,21 @@ footer {
     padding: 5px;
 }
 
-.footer-list::before {
-    content: '';
-    background-image: url('../img/ita.png');
-    width: 10px;
-}
-
 .ico {
     width: 40px;
     height: 40px;
+    /* cursor: pointer; */
 }
 
 .list-col {
     flex-direction: column;
-    padding:;
 }
+
+li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;  
+ }
 
 .footer-contact {
     border-bottom: 1px solid lightgray;
@@ -214,46 +245,8 @@ footer {
 .button-nav-footer {
     background-color: #3d61e2;
 }
-/* Regole Debug */
-
-/* .debug .container {
-    border: 2px solid salmon;
-} */
-
-
-/* .section {
-    border: 2px solid salmon;
-    padding-top: 30px;
-    padding-bottom: 30px;
-} */
-
-.download-section {
-    /* height: 400px; */
-    /* border: 2px solid chartreuse; */
-}
-
-/* .footer-contact {
-    height: 450px;
-} */
 
 .footer-nav {
     justify-content: space-between;
 }
-/* 
-.row, .row-reverse {
-    height: 400px;
-} */
-/* 
-.footer-main-section {
-    padding-top: 20px;
-    padding-bottom: 30px;
-} */
 
-/* .footer-section {
-    border: 2px solid salmon;
-    padding-top: 20px;
-} */
-
-/* .board {
-    height: 800px;
-} */
