@@ -41,6 +41,18 @@ h1 {
     font-size: 18px;
 }
 
+.magic-button {
+    margin: 0 auto;
+}
+
+.magic-button h2{
+    background-image: url(/img/stars.svg);
+    background-size: contain;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
 
 
 /* Regole header e container */
@@ -87,23 +99,17 @@ h1 {
     background-size: cover;
 }
 
-.bkg {
-    background-color: lightgrey;
+.board h1{
+    margin-bottom: 20px;
 }
 
-.board {
-    height: 800px;
-    background-color: rgb(6, 214, 6);
-}
+
 
 /* Flex */
 
 .flex {
     display: flex;
 }
-
-/* Regole Flex main item
- */
 
  .row {
     justify-content: space-between;
@@ -113,7 +119,7 @@ h1 {
     flex-direction: row-reverse;
 }
 
-.flex-item-sx{
+.flex-item-sx {
     flex-basis: 60%;
 }
 
@@ -121,6 +127,12 @@ h1 {
     flex-basis: 40%;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.board {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 
 
@@ -140,7 +152,6 @@ footer {
 .footer-item-large {
     flex-grow: 2;
     flex-basis: calc(100% / 3);
-    background-color: bisque;
 }
 
 .footer-section {
@@ -152,6 +163,17 @@ footer {
 .footer-button {
     background-color: salmon;
     padding: 5px;
+}
+
+.footer-list::before {
+    content: '';
+    background-image: url('../img/ita.png');
+    width: 10px;
+}
+
+.ico {
+    width: 40px;
+    height: 40px;
 }
 
 /* Regole Debug */
@@ -172,7 +194,7 @@ footer {
     height: 300px;
 }
 
-.footer-info {
+.footer-contact {
     height: 450px;
 }
 
@@ -181,10 +203,10 @@ footer {
     justify-content: space-between;
     padding-top: 10px;
 }
-
+/* 
 .row, .row-reverse {
     height: 400px;
-}
+} */
 
 .footer-main-section {
     padding-top: 20px;
@@ -196,7 +218,6 @@ footer {
     padding-top: 20px;
 }
 
-.board {
+/* .board {
     height: 800px;
-    background-color: rgb(6, 214, 6);
-}
+} */
