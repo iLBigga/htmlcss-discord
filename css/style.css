@@ -1,12 +1,18 @@
-/* Regole debug */
+/* Regole reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
 }
 
+ul, li, main{
+    list-style-type: none;
+}
+
 
 /* Regole header e container */
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -21,15 +27,15 @@
     display: flex;
     flex-direction: row;
     background-color: yellow;
-    justify-content: space-between;
-    padding: 10px;
+    /* justify-content: space-between; */   
+}
+
+.main-nav .main-menu {
+    flex-grow: 1;
 }
 
 
 /* Regole Main */
-.section {
-    padding: 40px;
-}
 
 .download-section {
     background-color: pink;
@@ -50,12 +56,14 @@
     background-color: rgb(6, 214, 6);
 }
 
-/* Regole Flex */
+/* Flex */
+
 .flex {
     display: flex;
 }
 
-
+/* Regole Flex main item
+ */
 .row-reverse {
     flex-direction: row-reverse;
 }
@@ -72,6 +80,7 @@
 
 
 /* Regole Footer */
+
 footer {
     background-color: rgb(66, 66, 66);
 }
@@ -79,11 +88,13 @@ footer {
 
 .footer-item {
     background-color: aqua;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex-basis: calc(100% / 6);
 }
 
 .footer-item-large {
     flex-grow: 2;
+    flex-basis: calc(100% / 3);
     background-color: bisque;
 }
 
@@ -92,11 +103,6 @@ footer {
     padding-top: 20px;
 }
 
-.footer-nav {
-    background-color: aqua;
-    justify-content: space-between;
-    padding: 10px;
-}
 
 .footer-button {
     background-color: salmon;
@@ -105,18 +111,51 @@ footer {
 
 /* Regole Debug */
 
-* {
-    border: 2px dashed black;
+.debug .container {
+    border: 2px solid salmon;
+}
+
+.debug .main-nav *{
+    border: 2px solid blue;
+    padding: 20px;
+}
+
+.section {
+    border: 2px solid salmon;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.download-section {
+    border: 2px solid chartreuse;
+    height: 300px;
 }
 
 .footer-info {
     height: 450px;
 }
 
+.footer-nav {
+    background-color: aqua;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
 .row, .row-reverse {
     height: 400px;
 }
 
-.download-section {
-    height: 300px;
+.footer-main-section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.footer-section {
+    border: 2px solid salmon;
+    padding-top: 20px;
+}
+
+.board {
+    height: 800px;
+    background-color: rgb(6, 214, 6);
 }
