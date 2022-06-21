@@ -4,11 +4,43 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul, li, main{
     list-style-type: none;
 }
+
+h1 {
+    font-size: 40px;
+ }
+
+ p {
+    font-size: 20px;
+ }
+
+/* button style */
+
+.button-style {
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+.mac-button::before{
+    content: '\2193';
+}
+
+.mac-button {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.browser-button {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+
 
 
 /* Regole header e container */
@@ -19,32 +51,40 @@ ul, li, main{
 }
 
 .main-header {
-    background-color: aquamarine;
     padding: 10px;
+    background-color: #3d61e2;
 }
 
 .main-nav {
     display: flex;
     flex-direction: row;
-    background-color: yellow;
-    /* justify-content: space-between; */   
+    justify-content: space-between;  
+    align-items: center; 
 }
 
-.main-nav .main-menu {
-    flex-grow: 1;
+.nav-list {
+    color: white;
+    gap: 20px;
 }
+
+
 
 
 /* Regole Main */
 
 .download-section {
-    background-color: pink;
+    color: white;
     max-width: 800px;
     margin: 0 auto;  
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 18px;
 }
 
 .download-bkg {
-    background-color: rgb(55, 113, 201);
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
 .bkg {
@@ -115,10 +155,6 @@ footer {
     border: 2px solid salmon;
 }
 
-.debug .main-nav *{
-    border: 2px solid blue;
-    padding: 20px;
-}
 
 .section {
     border: 2px solid salmon;
