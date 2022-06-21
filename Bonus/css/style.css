@@ -143,12 +143,6 @@ a {
     margin-bottom: 20px;
 }
 
-.wave {
-    position: relative;
-    background-image: url(../img/wave.svg);
-    height: 100%;
-}
-
 
 /* Flex */
 
